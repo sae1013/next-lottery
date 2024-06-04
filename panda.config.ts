@@ -2,6 +2,15 @@ import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
   // Whether to use css reset
+  staticCss: {
+    css: [
+      {
+        properties: {
+          color: ["#ffe135", "#0018a8", "#c32148", "#8c92ac", "#6e8b3d"],
+        },
+      },
+    ],
+  },
   preflight: true,
 
   // Where to look for your css declarations
@@ -12,7 +21,7 @@ export default defineConfig({
 
   // Files to exclude
   exclude: [],
-
+  jsxFramework: "react",
   // The output directory for your css system
   outdir: "styled-system",
 });
